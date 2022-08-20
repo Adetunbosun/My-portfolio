@@ -145,6 +145,13 @@ body {
   margin-top: 5%;
 }
 
+.project-button:hover,
+.project-button:active {
+  background: #fff;
+  color: #1a2236;
+  border: 2px solid #1a2236;
+}
+
 .about-heading {
   padding-top: 25px;
   font-family: 'Playfair Display', sans-serif;
@@ -186,6 +193,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.about-button:hover,
+.about-button:active {
+  background: #fff;
+  color: #1a2236;
+  border: 2px solid #1a2236;
 }
 
 .about-button span {
