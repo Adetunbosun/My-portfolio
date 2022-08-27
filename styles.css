@@ -366,6 +366,10 @@ body {
   display: none;
 }
 
+label {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
 .header {
   justify-content: center;
@@ -436,6 +440,13 @@ body {
 
   .project-heading {
     grid-area: title;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 110px;
+    line-height: 100%;
+    color: #1A2236;
+    transform: rotate(-90deg);
   }
 
   .project-card-1 {
@@ -445,6 +456,33 @@ body {
   .project-card-2 {
     grid-area: card-2
   }
+
+  .project-card-2,
+  .project-card-3,
+  .project-card-4,
+  .project-card-5,
+  .project-card-6 {
+    background: transparent;
+  }
+
+  .project-card-2 .project-details,
+  .project-card-3 .project-details,
+  .project-card-4 .project-details,
+  .project-card-5 .project-details,
+  .project-card-6 .project-details {
+    display: none;
+    padding: 0;
+  }
+
+  .language-list {
+    display: block;
+  }
+
+  .language-list li {
+    float: left;
+    margin: 2%;
+  }
+
   .project-card-3 {
     grid-area: card-3
   }
@@ -463,11 +501,147 @@ body {
 
   .projects {
     display: grid;
+    margin-top: 10%;
     grid-template-areas: 
-    'title title card-1 card-1 card-1 card-1'
-    'card-2 card-2 null null card-3 card-3'
-    'card-4 card-4 card-4 null card-5 card-5'
-    'null null null card-6 card-6 null';
+    'title card-1 card-1 card-1 card-1 card-1 card-1 card-1'
+    'card-2 null null null null null card-6 card-6'
+    'card-2 nule nule nule nule nule card-6 card-6'
+    'card-5 card-5 card-5 card-5 card-5  nil card-3 card-3'
+    'card-5 card-5 card-5 card-5 card-5 nile nile nile'
+    'card-5 card-5 card-5 card-5 card-5 nie nie nie'
+    'nul nul nul nul nul card-4 card-4 emp';
     width: 100vw;
+    background: url(./images/image-geometry_255.png) 50% 57% no-repeat, url(./images/image-geometry_33.png) right 90% no-repeat, url(./images/image-geometry_4.png) 47% 88% no-repeat, url(./images/image_dots.png) 25% top no-repeat;
+  }
+
+  .about-section {
+    flex-direction: row;
+  }
+
+  .about-cont,
+  .about-main-list {
+    width: 50%;
+  }
+
+  .about-cont {
+    order: 2;
+    padding-left: 5%;
+  }
+
+  .main-list1 {
+    grid-area: area-1;
+  }
+
+  .main-list2 {
+    grid-area: area-2;
+  }
+
+  .main-list3 {
+    grid-area: area-3;
+  }
+
+  .main-list1,
+  .main-list2,
+  .main-list3 {
+    margin: 0;
+  }
+
+  .about-main-list {
+    display: grid;
+    grid-template-areas: 'area-1 area-2'
+    'area-3 nil';
+    order: 1;
+    background: url(./images/image_dots_with_teal.png) right bottom no-repeat;
+  }
+
+  .about-heading {
+    font-weight: 400;
+    font-size: 110px;
+    line-height: 100%;
+  }
+
+  .about-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .about-button {
+    width: 254px;
+    height: 70px;
+  }
+
+  .contact {
+    background: url(./images/image-geometry_6.png) top left no-repeat;
+    margin-top: 7%;
+  }
+
+  .contact-header {
+    font-weight: 400;
+    font-size: 110px;
+    line-height: 100%;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .contact-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    width: 45%;
+    margin: 0 auto;
+  }
+
+  label {
+    display: block;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #7D7C84;
+  }
+
+  .det-cont {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .name-cont {
+    width: 40%;
+    margin: 5% 4%;
+  }
+
+  .text-cont-3 {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .form-text {
+    max-width: 700px;
+  }
+
+  .form-btn {
+    width: 254px;
+    height: 70px;
+    padding: 0;
+  }
+
+  .btn-cont {
+    margin: 0 auto;
+    width: 300px;
+  }
+
+  .footer {
+    display: flex;
+    padding: 2% 5%;
+    justify-content: space-between;
+  }
+
+  .footer-social-list {
+    margin: 0;
+    width: 30%;
   }
 }

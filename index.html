@@ -101,9 +101,11 @@
     </article>
   </section>
   <section class="about-section">
-    <h2 class="about-heading">About</h2>
-    <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea eiusmod</p>
-    <button class="about-button" type="button">Get my CV <span><img src="./images/arrowdownload.png" alt="download"/></span></button>
+    <div class="about-cont">
+      <h2 class="about-heading">About</h2>
+      <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea eiusmod</p>
+      <button class="about-button" type="button">Get my CV <span><img src="./images/arrowdownload.png" alt="download"/></span></button>
+    </div>
     <ul class="about-main-list">
       <li class="main-list1">
         <h4 class="list-title">Languages</h4>
@@ -139,10 +141,22 @@
     <h3 class="contact-header">Get started</h3>
     <p class="contact-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
     <form class="form" action="https://formspree.io/f/mjvzkaal" method="post">
-      <input type="text" maxlength="30" placeholder="Your name" class="form-input" name="name" required />
-      <input type="email" placeholder="Your email" name="email" class="form-input" required />
-      <textarea maxlength="500" placeholder="Enter your message here..." name="message" class="form-text" required></textarea>
-      <button type="submit" class="form-btn">Start collaboration</button>
+      <div class="det-cont">
+        <div class="name-cont">
+          <label>Your name</label>
+          <input type="text" maxlength="30" placeholder="Your name" class="form-input" name="name" required />
+        </div>
+        <div class="name-cont">
+          <label>Your name</label>
+          <input type="email" placeholder="Your email" name="email" class="form-input" required />
+        </div>
+      </div>
+      <div class="text-cont-3">
+        <textarea maxlength="500" placeholder="Enter your message here..." name="message" class="form-text" required></textarea>
+      </div>
+      <div class="btn-cont">
+        <button type="submit" class="form-btn">Start collaboration</button>
+      </div>
     </form>
   </section>
   <footer class="footer">
