@@ -85,11 +85,14 @@ body {
   color: #1a2236;
 }
 
-.project-card {
+.project-card-1,
+.project-card-2,
+.project-card-3,
+.project-card-4,
+.project-card-5,
+.project-card-6 {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 500px;
   background-color: #1a2236;
   padding-bottom: 3vh;
 }
@@ -357,4 +360,114 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.nav-list {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+.header {
+  justify-content: center;
+  padding: 2% 0;
+}
+
+  .navbar img {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-list-item {
+    margin: 0 2%;
+  }
+
+  .nav-list-item a {
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    color: #1A2236;
+  }
+
+  body {
+    background: none;
+  }
+
+  .headline {
+    background: url(./images/image-geometry_40.png) right/45% no-repeat, url(./images/image_dots.png) 47% bottom no-repeat;
+    padding: 0 10%;
+    align-items: flex-start;
+  }
+
+  .title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 110px;
+    line-height: 100%;
+    margin-top: 14%;
+  }
+
+  .main-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    width: 40%;
+    margin-top: 5%;
+  }
+
+  .button {
+    width: 254px;
+    height: 70px;
+    padding: 0;
+  }
+
+  .project-heading {
+    grid-area: title;
+  }
+
+  .project-card-1 {
+    grid-area: card-1
+  }
+
+  .project-card-2 {
+    grid-area: card-2
+  }
+  .project-card-3 {
+    grid-area: card-3
+  }
+
+  .project-card-4 {
+    grid-area: card-4
+  }
+  
+  .project-card-5 {
+    grid-area: card-5
+  }
+
+  .project-card-6 {
+    grid-area: card-6
+  }
+
+  .projects {
+    display: grid;
+    grid-template-areas: 
+    'title title card-1 card-1 card-1 card-1'
+    'card-2 card-2 null null card-3 card-3'
+    'card-4 card-4 card-4 null card-5 card-5'
+    'null null null card-6 card-6 null';
+    width: 100vw;
+  }
 }
