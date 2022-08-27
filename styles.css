@@ -3,7 +3,7 @@
 
 body {
   margin: 0;
-  padding: 0 5%;
+  padding: 0;
   box-sizing: border-box;
   background: url(./images/image_geometry_1.png) 0 0 no-repeat;
 }
@@ -20,6 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 5%;
 }
 
 .title {
@@ -71,6 +72,7 @@ body {
   display: grid;
   margin-top: 10vh;
   margin-bottom: 5vh;
+  padding: 0 5%;
 }
 
 .project-heading {
@@ -175,6 +177,7 @@ body {
 .about-section {
   display: flex;
   flex-direction: column;
+  padding: 0 5%;
 }
 
 .about-button {
@@ -257,4 +260,101 @@ body {
   line-height: 27px;
   letter-spacing: -0.0525em;
   color: #fff;
+}
+
+.contact {
+  background: #f9f9fa url(./images/image_geometry_35.png) no-repeat left top;
+  background-size: 35%;
+  padding: 15% 4%;
+}
+
+.contact-header {
+  font-family: 'Playfair Display', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+}
+
+.contact-text {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #1a2236;
+}
+
+.form-input {
+  width: 90%;
+  max-width: 288px;
+  background: #fff;
+  border: 1px solid #dfdfe0;
+  border-radius: 4px;
+  padding: 5%;
+  margin: 2% auto;
+}
+
+.form-text {
+  width: 90%;
+  max-width: 288px;
+  height: 112px;
+  background: #fff;
+  border: 1px solid #dfdfe0;
+  border-radius: 4px;
+  padding: 5%;
+  margin: 2% auto;
+}
+
+.form-btn {
+  background: #1a2236;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  border: 0;
+  margin-top: 5%;
+  padding: 3% 5%;
+  width: 100%;
+}
+
+.form-btn:active,
+.form-btn:hover {
+  background: #fff;
+  color: #1a2236;
+  border: 2px solid #1a2236;
+}
+
+.footer {
+  background: #1a2236;
+  padding: 10% 5%;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #92dcdc;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.footer-link {
+  margin-left: 5%;
+}
+
+.footer-social-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 7% 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
