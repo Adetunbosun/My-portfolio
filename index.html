@@ -10,12 +10,13 @@
 <body>
   <header class="header">
     <nav class="navbar">
-      <img src="./images/ic_menu.png" alt="menu" />
+      <img class="open-btn" src="./images/ic_menu.png" alt="menu" />
+      <span class="close-btn">&times;</span>
       <ul class="nav-list">
         <li class="nav-list-item"><a href="#">Home</a></li>
-        <li class="nav-list-item"><a href="#">Portfolio</a></li>
-        <li class="nav-list-item"><a href="#">About</a></li>
-        <li class="nav-list-item"><a href="#">Contact</a></li>
+        <li class="nav-list-item"><a href="#projects">Portfolio</a></li>
+        <li class="nav-list-item"><a href="#about">About</a></li>
+        <li class="nav-list-item"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -25,7 +26,7 @@
       If you like what you see and have a project you need coded, don’t hesitate and contact me.</p>
     <button class="button" type="button">Start collaboration</button>
   </section>
-  <section class="projects">
+  <section class="projects" id="projects">
     <h2 class="project-heading">Projects</h2>
     <article class="project-card-1">
       <img class="project-image" src="./images/Rectangle-21.png" alt="project image"/>
@@ -100,7 +101,7 @@
       </div>
     </article>
   </section>
-  <section class="about-section">
+  <section class="about-section" id="about">
     <div class="about-cont">
       <h2 class="about-heading">About</h2>
       <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea eiusmod</p>
@@ -137,7 +138,7 @@
       </li>
     </ul>
   </section>
-  <section class="contact">
+  <section class="contact" id="contact">
     <h3 class="contact-header">Get started</h3>
     <p class="contact-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
     <form class="form" action="https://formspree.io/f/mjvzkaal" method="post">
@@ -170,5 +171,8 @@
       <li><a href="#"><img src="./images/ic_angellist.png" alt="stack overflow" /></a></li>
     </ul>
   </footer>
+
+
+  <script src="./script.js"></script>
 </body>
 </html>

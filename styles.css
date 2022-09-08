@@ -14,6 +14,8 @@ body {
   justify-content: end;
   padding: 5%;
   height: 5vh;
+  position: fixed;
+  right: 0;
 }
 
 .headline {
@@ -265,6 +267,53 @@ body {
   color: #fff;
 }
 
+.nav-list {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  margin: 0;
+  padding: 0;
+  z-index: 60;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow-x: hidden;
+  background: url(./images/image_geometry_1.png) 0 0 no-repeat, url(./images/Group-51.png) 20% 80% no-repeat, url(./images/Group-51.png) 80% 20% no-repeat, url(./images/Mask-Group.png) left bottom/100% no-repeat, #fff;
+  transition: all ease 0.4s;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.navbar.active .nav-list {
+  left: 0;
+}
+
+.close-btn {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5%;
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.nav-list-item a {
+  text-decoration: none;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 300%;
+  text-align: center;
+}
+
 .contact {
   background: #f9f9fa url(./images/image_geometry_35.png) no-repeat left top;
   background-size: 35%;
@@ -362,10 +411,6 @@ body {
   align-items: center;
 }
 
-.nav-list {
-  display: none;
-}
-
 label {
   display: none;
 }
@@ -376,12 +421,18 @@ label {
     padding: 2% 0;
   }
 
-  .navbar img {
+  .navbar img,
+  .close-btn {
     display: none;
   }
 
   .nav-list {
-    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 15vh;
+    flex-direction: row;
+    background: none;
     width: 100vw;
     margin: 0;
     padding: 0;
@@ -407,6 +458,7 @@ label {
 
   body {
     background: none;
+    padding-top: 7%;
   }
 
   .headline {
