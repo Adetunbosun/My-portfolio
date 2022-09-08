@@ -426,6 +426,21 @@ label {
     display: none;
   }
 
+  .nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 15vh;
+    flex-direction: row;
+    background: none;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+  }
+
   .nav-list-item {
     margin: 0 2%;
   }
